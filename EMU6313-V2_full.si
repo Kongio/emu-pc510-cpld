@@ -1,0 +1,26 @@
+Name EMU6313-V2;
+PartNo SK510_REV_A;
+Date 10/06/2026;
+Revision 05;
+Designer E-mu Systems;
+Company E-mu Systems, Inc.;
+Assembly PC510;
+Location U10;
+Device f1502ispplcc44;
+
+ORDER: UPCLRN, EXPCSN, IOWRN, RD, HWAITN, A13, A12, A11, A10, A9, A8, A7, A6, A5, A4, A3, A2, A1, BUFOEN, CSHCHPN, WRPAGEN, LRD, LA9, LA8, LA7, LA6, LA5, LA4, LA3, LA2, LA1;
+
+VECTORS:
+1 1 1 1 1 0 0 0 0 1 0 1 0 1 0 1 0 1 H H H H H L H L H L H L H
+1 1 1 1 1 0 0 0 0 0 1 0 1 0 1 0 1 0 H H H H L H L H L H L H L
+1 0 1 1 1 0 0 0 1 0 1 0 1 0 1 0 1 0 L L H H L H L H L H L H L
+1 0 1 1 0 0 0 0 1 0 1 0 1 0 1 0 1 0 L L H H L H L H L H L H L
+1 0 1 1 1 0 0 0 1 0 1 0 1 0 1 0 1 0 L L H H L H L H L H L H L
+1 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 H H H L L L L L L L L L L
+1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 L H H L L L L L L L L L L
+1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 L H L L L L L L L L L L L
+1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 L H H L L L L L L L L L L
+1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 H H H H L L L L L L L L L
+1 0 1 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 H H H H L L L L L L L L L
+1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 H H H H L L L L L L L L L
+0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 Z Z Z Z Z Z Z Z Z Z Z Z Z

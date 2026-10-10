@@ -1,0 +1,8 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# WinCUPL temp & intermediate build artifacts (keep .pld, .si, .jed, .svf)
+*.tmp
+*.bak
+*~
