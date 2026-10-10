@@ -19,6 +19,11 @@ Used in **E-mu Emulator IV, E5000 Ultra, E6400, and E-Synth** samplers.
   * Hot air harvesting, pad preparation, and drag-soldering steps
   * ColdFire bus, sample RAM, and G-to-H digital audio routing
   * EOS auto-detection sequence and hidden service diagnostics (`1358`)
+* **[`E5000_Ultra_8_Output_Hardware_Upgrade_Guide.md`](E5000_Ultra_8_Output_Hardware_Upgrade_Guide.md)**: Hardware upgrade guide for converting the **E-mu E5000 Ultra** from 4 outputs to full **8 analog outputs** (Sub 2 & Sub 3 pairs), achieving complete motherboard feature parity with the **E6400 Ultra**:
+  * Complete Bill of Materials (BOM): CS4329 DACs, OP275 Op-Amps, J109 muting FETs, and 1/4" phone jacks (`J5`..`J8`)
+  * The critical Jack Detection resistor network modification (desoldering `RN10`, installing `RN12` & `RN13`)
+  * Full schematic walkthrough of Sheets 11, 14, and 15 (`SK10485`)
+  * EOS interactive jack detection diagnostics (`1358`) and audio routing verification
 * **[`PC510_U10_CPLD_Replacement_Guide.md`](PC510_U10_CPLD_Replacement_Guide.md)**: Complete step-by-step technical guide covering:
   * Physical PLCC-44 pinout and schematic connections
   * CUPL decode and latch logic
