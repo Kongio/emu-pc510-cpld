@@ -8,6 +8,11 @@ Used in **E-mu Emulator IV, E5000 Ultra, E6400, and E-Synth** samplers.
 
 ## Repository Contents
 
+* **[`PC510_U10_Operational_Walkthrough.md`](PC510_U10_Operational_Walkthrough.md)**: Deep architectural & bus cycle walkthrough:
+  * How the E-mu host CPU interacts with the PC510 expansion slot
+  * Line-by-line breakdown of every input and output pin
+  * Detailed step-by-step sequence diagrams for Page Register writes and H-Chip reads/writes
+  * Transparent address latch timing and protection theory
 * **[`PC510_U10_CPLD_Replacement_Guide.md`](PC510_U10_CPLD_Replacement_Guide.md)**: Complete step-by-step technical guide covering:
   * Physical PLCC-44 pinout and schematic connections
   * CUPL decode and latch logic
