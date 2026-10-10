@@ -13,6 +13,12 @@ Used in **E-mu Emulator IV, E5000 Ultra, E6400, and E-Synth** samplers.
   * Line-by-line breakdown of every input and output pin
   * Detailed step-by-step sequence diagrams for Page Register writes and H-Chip reads/writes
   * Transparent address latch timing and protection theory
+* **[`E5000_Ultra_128_Voice_Hardware_Upgrade_Guide.md`](E5000_Ultra_128_Voice_Hardware_Upgrade_Guide.md)**: Hardware upgrade guide for converting the **E-mu E5000 Ultra** (64 voices) to full **128 voices** using donor ASICs from a Proteus XL-6 / Proteus 2000 series board:
+  * Complete Bill of Materials (BOM) including missing passives (`R209`, `R218`, and 19 decoupling capacitors)
+  * Component locations on motherboard schematic `SK10485` (`U53`, `U43`, `U44`)
+  * Hot air harvesting, pad preparation, and drag-soldering steps
+  * ColdFire bus, sample RAM, and G-to-H digital audio routing
+  * EOS auto-detection sequence and hidden service diagnostics (`1358`)
 * **[`PC510_U10_CPLD_Replacement_Guide.md`](PC510_U10_CPLD_Replacement_Guide.md)**: Complete step-by-step technical guide covering:
   * Physical PLCC-44 pinout and schematic connections
   * CUPL decode and latch logic
