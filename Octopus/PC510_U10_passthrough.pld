@@ -1,0 +1,77 @@
+Name     PC510_U10_COMB ;
+PartNo   SK510_REV_A ;
+Date     10/01/2026 ;
+Revision 01 ;
+Designer E-mu Systems / Reverse Engineered ;
+Company  E-mu Systems, Inc. ;
+Assembly PC510 ;
+Location U10 ;
+Device   f1502ispplcc44 ;
+
+/* ************************************************************************** */
+/* E-mu Emulator IV / E5000 / E6400 Digital Audio Interface (PC510 / SK510)  */
+/* Combinatorial Pass-Through Buffer Variant (No internal latch feedback)     */
+/* Target Device: Altera EPM7032LC44 / Microchip/Atmel ATF1502AS-PLCC44       */
+/* ************************************************************************** */
+
+/* Input Pins */
+Pin 1  = UPCLRN ;
+Pin 2  = OE2 ;
+Pin 4  = EXPCSN ;
+Pin 5  = IORDN ;
+Pin 6  = A1 ;
+Pin 7  = A3 ;
+Pin 8  = A2 ;
+Pin 9  = A5 ;
+Pin 11 = A4 ;
+Pin 12 = A7 ;
+Pin 13 = A6 ;
+Pin 14 = A9 ;
+Pin 16 = A8 ;
+Pin 17 = A11 ;
+Pin 18 = A10 ;
+Pin 19 = A13 ;
+Pin 20 = A12 ;
+Pin 21 = IOWRN ;
+Pin 24 = RD ;
+Pin 41 = HWAITN ;
+Pin 43 = GCLK ;
+Pin 44 = OE1 ;
+
+/* Output Pins */
+Pin 25 = LA8 ;
+Pin 26 = LA7 ;
+Pin 27 = BUFOEN ;
+Pin 28 = NC ;
+Pin 29 = LA4 ;
+Pin 31 = LA1 ;
+Pin 32 = WRPAGEN ;
+Pin 33 = LA3 ;
+Pin 34 = LA2 ;
+Pin 36 = LA5 ;
+Pin 37 = LRD ;
+Pin 38 = CSHCHPN ;
+Pin 39 = LA6 ;
+Pin 40 = LA9 ;
+
+/* Logic Equations */
+!BUFOEN  = !EXPCSN & !A13 & !A12 & !A11 ;
+!CSHCHPN = !EXPCSN & !A13 & !A12 & !A11 & A10 ;
+!WRPAGEN = !EXPCSN & !A13 & !A12 & !A11 & !A10 & !IOWRN ;
+
+LA1 = A1 ;
+LA2 = A2 ;
+LA3 = A3 ;
+LA4 = A4 ;
+LA5 = A5 ;
+LA6 = A6 ;
+LA7 = A7 ;
+LA8 = A8 ;
+LA9 = A9 ;
+LRD = RD ;
+
+[LA1..9].oe = UPCLRN ;
+LRD.oe      = UPCLRN ;
+CSHCHPN.oe  = UPCLRN ;
+WRPAGEN.oe  = UPCLRN ;
+BUFOEN.oe   = UPCLRN ;
