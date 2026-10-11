@@ -100,10 +100,10 @@ The pinout below reflects the physical wiring on the E-mu PC510 schematic (**She
 | **23** | `VCC` | Power | +5V Rail | Core & I/O Power |
 | **24** | `RD` | Input | CN4-44 via R12 | Bus Direction (High = Read, Low = Write) |
 | **25** | `LA8` | Output | Drives R71 (47Ω) | Latched Address Bit 8 |
-| **26** | `LA7` | Output | Drives R21 (47Ω) | Latched Address Bit 7 |
+| **26** | `NC` | Spare | Unconnected | Spare / Unused Pin |
 | **27** | `BUFOEN` | Output | Drives R70 to U13 | Data Bus Buffer Enable (`74ACTQ16245`) |
-| **28** | `NC` | Spare | Unconnected | Spare / Unused Pin |
-| **29** | `LA4` | Output | Drives R22 (47Ω) | Latched Address Bit 4 |
+| **28** | `LA4` | Output | Drives R22 (47Ω) | Latched Address Bit 4 |
+| **29** | `LA7` | Output | Drives R21 (47Ω) | Latched Address Bit 7 |
 | **30** | `GND` | Power | System Ground | Ground |
 | **31** | `LA1` | Output | Drives R20 (47Ω) | Latched Address Bit 1 |
 | **32** | `WRPAGEN` *(TCK)*| Output | Drives U9 CLK (R60) | Write Page Register Strobe *(Reused JTAG TCK)* |
@@ -173,10 +173,10 @@ Pin 44 = OE1 ;      /* Dedicated Global Output Enable 1, tied to UPCLRN       */
 /* OUTPUT PINS                                                                */
 /* ========================================================================== */
 Pin 25 = LA8 ;      /* Latched Address bit 8 -> drives R71 (47 ohm)           */
-Pin 26 = LA7 ;      /* Latched Address bit 7 -> drives R21 (47 ohm)           */
+Pin 26 = NC ;       /* Unconnected / Spare pin (Schematic Pin 26 = NC)        */
 Pin 27 = BUFOEN ;   /* Data Buffer Output Enable (Active Low) -> drives R70   */
-Pin 28 = NC ;       /* Unconnected / Spare pin                                */
-Pin 29 = LA4 ;      /* Latched Address bit 4 -> drives R22 (47 ohm)           */
+Pin 28 = LA4 ;      /* Latched Address bit 4 -> drives R22 (47 ohm)           */
+Pin 29 = LA7 ;      /* Latched Address bit 7 -> drives R21 (47 ohm)           */
 Pin 31 = LA1 ;      /* Latched Address bit 1 -> drives R20 (47 ohm)           */
 Pin 32 = WRPAGEN ;  /* Write Page Enable (Active Low) -> drives U9 CLK (R60)  */
 Pin 33 = LA3 ;      /* Latched Address bit 3 -> drives R19 (47 ohm)           */

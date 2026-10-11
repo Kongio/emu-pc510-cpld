@@ -50,10 +50,10 @@ Pin 44 = OE1 ;      /* Dedicated Global Output Enable 1, tied to UPCLRN       */
 /* OUTPUT PINS                                                                */
 /* ========================================================================== */
 Pin 25 = LA8 ;      /* Latched Address bit 8 -> drives R71 (47 ohm)           */
-Pin 26 = LA7 ;      /* Latched Address bit 7 -> drives R21 (47 ohm)           */
+Pin 26 = NC ;       /* Unconnected / Spare pin (Schematic Pin 26 = NC)        */
 Pin 27 = BUFOEN ;   /* Data Buffer Output Enable (Active Low) -> drives R70   */
-Pin 28 = NC ;       /* Unconnected / Spare pin                                */
-Pin 29 = LA4 ;      /* Latched Address bit 4 -> drives R22 (47 ohm)           */
+Pin 28 = LA4 ;      /* Latched Address bit 4 -> drives R22 (47 ohm)           */
+Pin 29 = LA7 ;      /* Latched Address bit 7 -> drives R21 (47 ohm)           */
 /* Pin 30 = GND */
 Pin 31 = LA1 ;      /* Latched Address bit 1 -> drives R20 (47 ohm)           */
 Pin 32 = WRPAGEN ;  /* Write Page Enable (Active Low) -> drives U9 CLK (R60)  */

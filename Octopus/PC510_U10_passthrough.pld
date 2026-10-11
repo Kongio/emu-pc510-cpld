@@ -40,10 +40,10 @@ Pin 44 = OE1 ;
 
 /* Output Pins */
 Pin 25 = LA8 ;
-Pin 26 = LA7 ;
+Pin 26 = NC ;
 Pin 27 = BUFOEN ;
-Pin 28 = NC ;
-Pin 29 = LA4 ;
+Pin 28 = LA4 ;
+Pin 29 = LA7 ;
 Pin 31 = LA1 ;
 Pin 32 = WRPAGEN ;
 Pin 33 = LA3 ;
